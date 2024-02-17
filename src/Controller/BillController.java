@@ -7,11 +7,8 @@ import View.BookConsole;
 
 public class BillController {
 	 public static double calculateAmount(int seconds) {
-	        // Convert seconds to hours
-	        double hours = seconds / 3600.0; // There are 3600 seconds in an hour
-	        // Charge per hour
+	        double hours = seconds / 3600.0; 
 	        double chargePerHour = getConsoleCost();
-	        // Calculate amount
 	        double amount = hours * chargePerHour;
 	        return amount;
 	    }
